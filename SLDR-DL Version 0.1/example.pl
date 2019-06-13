@@ -33,6 +33,7 @@ nnet_definition(NNet):-
   NNet = [layer1,layer2,layer3,layer4,layer5,layer6].
 
 run_main:-
+  init_search_time,
   nnet_definition(NNet),
   rule_set(RS,NR),
   symbol_set(SS,NS),
